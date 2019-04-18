@@ -9,7 +9,7 @@ public class DuplicateCharacters {
 		// TODO Auto-generated method stub
 
 		String str = "Java Programming";
-		char[] arr = str.toCharArray();
+		char[] arr = str.toCharArray(); 
 		HashMap<Character, Integer> hasmap = new HashMap<Character, Integer>();
 		for (char c : arr) {
 

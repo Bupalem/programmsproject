@@ -33,10 +33,6 @@ public class PyramidProgram {
 		int addrowcount = 1;
 		for (int i = 1; i <= noofrows; i++) {
 
-			/*for (int j = 1; j <= i; j++) {
-				System.out.print(" ");
-			}*/
-
 			for (int j = 1; j <= addrowcount; j++) {
 
 				System.out.print(addrowcount+" ");
