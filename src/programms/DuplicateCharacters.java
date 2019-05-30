@@ -10,23 +10,24 @@ public class DuplicateCharacters {
 
 		String str = "Java Programming";
 		char[] arr = str.toCharArray(); 
-		HashMap<Character, Integer> hasmap = new HashMap<Character, Integer>();
+		HashMap<Character, Integer> hmap = new HashMap<Character, Integer>();
 		for (char c : arr) {
 
-			if (hasmap.containsKey(c)) {
-				hasmap.put(c, hasmap.get(c) + 1);// hasmap.get(c) will get the value
+			if (hmap.containsKey(c)) {
+				hmap.put(c, hmap.get(c) + 1);// hasmap.get(c) will get the value
 			} else {
-				hasmap.put(c, 1);
+				hmap.put(c, 1);
 
 			}
 		}
 
-		Set<Character> chstring = hasmap.keySet();
+		Set<Character> chstring = hmap.keySet();
 
 		for (Character c : chstring) {
+			if(hmap.get(c)>1) {
 
-			System.out.println(c + ":" + hasmap.get(c));
-
+			System.out.println(c + ":" + hmap.get(c));
+			}
 		}
 
 	}
