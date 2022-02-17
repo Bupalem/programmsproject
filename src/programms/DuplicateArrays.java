@@ -25,8 +25,10 @@ for(int one:intval) {
 	if(hmap.get(one)>1) {
 System.out.println(one);		
 	}
-}
 	
+	
+}
+	System.out.println("set values:"+ intval);
 	
 }
 
